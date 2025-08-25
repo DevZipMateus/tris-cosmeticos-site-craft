@@ -56,10 +56,22 @@
   body {
     @apply bg-background text-foreground font-body;
     font-feature-settings: "rlig" 1, "calt" 1;
+    /* Prevent horizontal scroll on mobile */
+    overflow-x: hidden;
+    /* Ensure proper text rendering on all devices */
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading;
+  }
+  
+  /* Ensure images don't overflow their containers */
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -95,7 +107,7 @@
   }
   
   .btn-outline-light {
-    @apply bg-white/10 text-white border border-white/60 hover:bg-accent hover:text-accent-foreground hover:border-accent transition-all duration-300 font-medium;
+    @apply bg-white/10 text-white border border-white/60 hover:bg-accent hover:text-accent-foreground hover:border-accent transition-all duration-300 font-medium backdrop-blur-sm;
   }
   
   /* Cards com Elevação */
@@ -103,9 +115,9 @@
     @apply bg-card border border-border shadow-lg hover:shadow-xl transition-all duration-300;
   }
   
-  /* Seções com Espaçamento */
+  /* Seções com Espaçamento - Responsive */
   .section-padding {
-    @apply py-16 lg:py-24;
+    @apply py-12 sm:py-16 lg:py-24;
   }
   
   /* Texto Dourado */
@@ -132,6 +144,12 @@
   
   .animate-float {
     animation: float 3s ease-in-out infinite;
+  }
+  
+  /* Safe area for mobile devices */
+  .safe-area-inset {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
   }
 }
 
@@ -210,5 +228,43 @@ html {
   }
   100% {
     background-position: 200% 0;
+  }
+}
+
+/* Mobile specific optimizations */
+@media (max-width: 640px) {
+  /* Prevent text from being too small on mobile */
+  body {
+    font-size: 16px;
+  }
+  
+  /* Ensure touch targets are large enough */
+  button, a {
+    min-height: 44px;
+  }
+  
+  /* Optimize container padding for mobile */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Tablet specific optimizations */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+/* Landscape mobile optimization */
+@media (max-width: 896px) and (orientation: landscape) {
+  .section-padding {
+    @apply py-8;
+  }
+  
+  .hero-gradient {
+    min-height: 100vh;
   }
 }
