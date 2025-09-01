@@ -10,7 +10,17 @@ const Hero = () => {
   };
 
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center hero-gradient overflow-hidden">
+    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0">
+        <img
+          src="/lovable-uploads/14b5257e-aa3e-4fdc-afb9-fe109683f8c1.png"
+          alt="Produtos de beleza premium"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/60"></div>
+      </div>
+      
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-pattern opacity-5"></div>
       
@@ -30,7 +40,7 @@ const Hero = () => {
           {/* Logo Principal */}
           <div className="mb-6 sm:mb-8">
             <img
-              src="/lovable-uploads/d832e90b-76da-4698-a324-38d05b825e3f.png"
+              src="/lovable-uploads/81546172-0537-4bbe-acb2-cb944df58da9.png"
               alt="Trís Cosméticos - Sua beleza em destaque"
               className="h-20 sm:h-24 md:h-32 lg:h-40 w-auto mx-auto animate-float"
             />
