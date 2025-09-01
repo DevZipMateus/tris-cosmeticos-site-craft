@@ -11,7 +11,7 @@ const Footer = () => {
           {/* Logo e Descrição */}
           <div className="space-y-4 sm:col-span-2 lg:col-span-1">
             <img
-              src="/lovable-uploads/81546172-0537-4bbe-acb2-cb944df58da9.png"
+              src="/lovable-uploads/d832e90b-76da-4698-a324-38d05b825e3f.png"
               alt="Trís Cosméticos"
               className="h-12 sm:h-16 w-auto"
             />
