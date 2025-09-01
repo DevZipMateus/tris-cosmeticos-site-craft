@@ -23,7 +23,7 @@ const Index = () => {
       { property: 'og:title', content: 'Trís Cosméticos - Sua beleza em destaque | Produtos de qualidade em Palmas TO' },
       { property: 'og:description', content: 'Trís Cosméticos em Palmas TO oferece produtos de qualidade premium para realçar sua beleza. Tratamentos capilares profissionais: hidratação, nutrição, reconstrução e alinhamento.' },
       { property: 'og:type', content: 'website' },
-      { property: 'og:image', content: '/lovable-uploads/81546172-0537-4bbe-acb2-cb944df58da9.png' },
+      { property: 'og:image', content: '/lovable-uploads/d832e90b-76da-4698-a324-38d05b825e3f.png' },
       { property: 'og:url', content: window.location.href },
     ];
 
