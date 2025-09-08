@@ -33,8 +33,8 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold text-foreground mb-1 sm:mb-2 text-sm sm:text-base">Endereço</h4>
                     <p className="text-muted-foreground text-xs sm:text-sm">
-                      Rua 16 Quadra 38 Lote 01<br />
-                      Palmas, TO
+                      Rua Ms 22 Quadra 69A Lote 03<br />
+                      CEP: 77066-024 - Palmas, TO
                     </p>
                   </div>
                 </div>
@@ -111,7 +111,7 @@ const Contact = () => {
             {/* CNPJ */}
             <div className="card-elevated p-3 sm:p-4 rounded-xl bg-muted/30">
               <p className="text-xs sm:text-sm text-muted-foreground text-center">
-                <strong>CNPJ:</strong> 14.388.422/0001-26
+                <strong>CNPJ:</strong> 14.388.432/0001-26
               </p>
             </div>
           </div>

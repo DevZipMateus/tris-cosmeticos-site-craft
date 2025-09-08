@@ -48,7 +48,8 @@ const Index = () => {
       "email": "triscosmeticos.to@gmail.com",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Rua 16 Quadra 38 Lote 01",
+        "streetAddress": "Rua Ms 22 Quadra 69A Lote 03",
+        "postalCode": "77066-024",
         "addressLocality": "Palmas",
         "addressRegion": "TO",
         "addressCountry": "BR"
