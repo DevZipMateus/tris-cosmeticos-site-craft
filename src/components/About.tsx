@@ -39,7 +39,7 @@ const About = () => {
                 </p>
                 <p>
                   Em fevereiro de 2016, compramos uma pequena franquia de cosméticos e nos mudamos 
-                  para Palmas TO, onde nasceu oficialmente a <strong className="text-primary">Trís Cosméticos</strong>.
+                  para Palmas TO, onde nasceu oficialmente a <strong className="text-primary" translate="no">Trís Cosméticos</strong>.
                 </p>
               </div>
             </div>

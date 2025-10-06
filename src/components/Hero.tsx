@@ -43,6 +43,7 @@ const Hero = () => {
               src="/lovable-uploads/d832e90b-76da-4698-a324-38d05b825e3f.png"
               alt="Trís Cosméticos - Sua beleza em destaque"
               className="h-20 sm:h-24 md:h-32 lg:h-40 w-auto mx-auto animate-float"
+              translate="no"
             />
           </div>
 

@@ -32,7 +32,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground mb-1 sm:mb-2 text-sm sm:text-base">Endereço</h4>
-                    <p className="text-muted-foreground text-xs sm:text-sm">
+                    <p className="text-muted-foreground text-xs sm:text-sm" translate="no">
                       Rua Ms 22 Quadra 69A Lote 03<br />
                       CEP: 77066-024 - Palmas, TO
                     </p>
@@ -51,6 +51,7 @@ const Contact = () => {
                       className="text-primary hover:text-accent transition-colors text-xs sm:text-sm"
                       target="_blank"
                       rel="noopener noreferrer"
+                      translate="no"
                     >
                       (63) 99274-2505
                     </a>
@@ -67,6 +68,7 @@ const Contact = () => {
                     <a 
                       href="mailto:triscosmeticos.to@gmail.com"
                       className="text-primary hover:text-accent transition-colors text-xs sm:text-sm break-all"
+                      translate="no"
                     >
                       triscosmeticos.to@gmail.com
                     </a>
@@ -110,7 +112,7 @@ const Contact = () => {
 
             {/* CNPJ */}
             <div className="card-elevated p-3 sm:p-4 rounded-xl bg-muted/30">
-              <p className="text-xs sm:text-sm text-muted-foreground text-center">
+              <p className="text-xs sm:text-sm text-muted-foreground text-center" translate="no">
                 <strong>CNPJ:</strong> 14.388.432/0001-26
               </p>
             </div>

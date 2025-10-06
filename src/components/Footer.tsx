@@ -85,7 +85,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
                 <MapPin className="h-4 w-4 sm:h-5 sm:w-5 text-accent mt-0.5 flex-shrink-0" />
-                <p className="text-white/80 text-sm sm:text-base">
+                <p className="text-white/80 text-sm sm:text-base" translate="no">
                   Rua Ms 22 Quadra 69A Lote 03<br />
                   CEP: 77066-024 - Palmas, TO
                 </p>
@@ -97,6 +97,7 @@ const Footer = () => {
                   className="text-white/80 hover:text-accent transition-colors text-sm sm:text-base"
                   target="_blank"
                   rel="noopener noreferrer"
+                  translate="no"
                 >
                   (63) 99274-2505
                 </a>
@@ -106,6 +107,7 @@ const Footer = () => {
                 <a
                   href="mailto:triscosmeticos.to@gmail.com"
                   className="text-white/80 hover:text-accent transition-colors text-sm sm:text-base break-all"
+                  translate="no"
                 >
                   triscosmeticos.to@gmail.com
                 </a>
@@ -130,7 +132,7 @@ const Footer = () => {
             <p className="text-white/60 text-xs sm:text-sm text-center sm:text-left">
               © {currentYear} Trís Cosméticos. Todos os direitos reservados.
             </p>
-            <p className="text-white/60 text-xs sm:text-sm">
+            <p className="text-white/60 text-xs sm:text-sm" translate="no">
               CNPJ: 14.388.432/0001-26
             </p>
           </div>
